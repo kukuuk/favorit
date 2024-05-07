@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фаворит</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ba86877d-aa96-4c3d-859f-8fd2139484c5&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+    <header class="header" id="main">
+        <div class="image-card">
+            <img src="img/back.jpeg" alt="background" class="img__back">
+        </div>
+        <div class="wrapper">
+            <a href="#main"><h2 class="logo">Фаворит</h2></a>
+            <nav class="nav">
+                    <ul>
+                        <a href="#main" class="links"><li>Главная</li></a>
+                        <a href="#catalog" class="links"><li>Каталог</li></a>
+                        <a href="#way" class="links"><li>Как добраться</li></a>
+                    </ul>
+            </nav>
+            <a href="#form" class="links"><button class="nav__btn">Запросить прайс</button></a>
+            <div class="burger">
+                <span></span>
+            </div>
+        </div>
+        <div class="header__text">
+            <h1 class="header__text--big">Качественные<br> продукты<br> со склада <br>Росрезерв</h1>
+            <p class="header__text--small">Отгрузка по всей территории РФ</p>
+            <a href="#catalog"><button type="button" class="header__btn--production">Наша продукция</button></a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="catalog" id="catalog">
+            <h2 class="catalog__h2">Каталог</h2>
+            <div class="catalog__wrapper">
+                <div class="catalog__wrapper-card">
+                    <a href="meat.html">
+                      <img src="img/meet.jpeg" alt="Мясные консервы" class="calalog__img">
+                      <h3 class="catalog__h3">Мясные консервы</h3>
+                    </a>
+                </div>
+                <div class="catalog__wrapper-card">
+                    <a href="fish.html">
+                      <img src="img/fish.jpeg" alt="Рыбные консервы" class="calalog__img">
+                      <h3>Рыбные консервы</h3>
+                    </a>
+                </div>
+                <div class="catalog__wrapper-card">
+                    <a href="bakaleya.html">
+                      <img src="img/bakaleya.jpeg" alt="Бакалея" class="calalog__img">
+                      <h3>Бакалея</h3>
+                    </a>
+                </div>
+                <div class="catalog__wrapper-card">
+                    <a href="milk.html">
+                      <img src="img/milk.jpeg" alt="Молочная продукция" class="calalog__img">
+                      <h3>Молочная продукция</h3>
+                    </a>
+                </div>
+                <div class="catalog__wrapper-card">
+                  <a href="sause.html">
+                    <img src="img/sause.jpeg" alt="Соусы" class="calalog__img">
+                    <h3>Соусы</h3>
+                  </a>
+              </div>
+              <div class="catalog__wrapper-card">
+                <a href="other.html">
+                  <img src="img/fruits.jpeg" alt="Прочее" class="calalog__img">
+                  <h3>Прочее</h3>
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="map">
+            <h2 class="how_to_way" id="way">Как добраться</h2>
+            <div id="map">
+                <p>140054, г. Московская область, Люберецкий район, г. Котельники, ул. Новая, д. 19</p>
+            </div>
+        </div>
+        <div class="container" id="form">
+          <h2 class="price__h2">Запросить прайс</h2>
+          <div class="content">
+            <div class="left-side">
+              <div class="address details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Адрес</div>
+                <div class="text-one">г. Котельники</div>
+                <div class="text-two">ул. Новая, д. 19</div>
+              </div>
+              <div class="phone details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="topic">Телефон</div>
+                <div class="text-one">+7-391-201-51-50 Красноярск</div>
+                <div class="text-two">+7-495-557-23-31 Москва</div>
+                <div class="text-two">+7-495-557-21-55 Москва</div>
+              </div>
+              <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">rezerver2023@yandex.ru</div>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="topic-text">Отправьте нам заявку</div>
+              <form class="forma">
+                <div class="input-box">
+                  <input
+                    type="text"
+                    placeholder="Ваша компания"
+                    name="name"
+                    class="_req form__input"
+                  />
+                  <span class="form__error" data-for="name"></span>
+                </div>
+                <div class="input-box">
+                  <input
+                    type="text"
+                    placeholder="Введите email"
+                    name="email"
+                    class="_req _email form__input"
+                  />
+                  <span class="form__error" data-for="email"></span>
+                </div>
+                <div class="input-box">
+                  <input
+                    type="text"
+                    placeholder="Введите телефон"
+                    name="phone"
+                    class="_req form__input"
+                  />
+                </div>
+                <div class="input-box message-box">
+                  <textarea placeholder="Сообщение" name="message" class="input__mess"></textarea>
+                </div>
+                <div class="button">
+                  <input type="submit" class="form__btn" value="Отправить" name="mess" />
+                  <div class="form__send-result"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <script
+          src="https://kit.fontawesome.com/fce9a50d02.js"
+          crossorigin="anonymous"
+        ></script>
+    </main>
+    <footer class="footer">
+      <div class="footer__info">
+        <div class="footer__info-once">
+          <h2 class="footer__info-once-h2">Каталог</h2>
+          <ul class="footer__info-once-ul">
+            <a href="meat.html" class="footer__info-once-link"><li>Мясные консервы</li></a>
+            <a href="fish.html" class="footer__info-once-link"><li>Рыбные консервы</li></a>
+            <a href="bakaleya.html" class="footer__info-once-link"><li>Бакалея</li></a>
+            <a href="milk.html" class="footer__info-once-link"><li>Молочная продукция</li></a>
+            <a href="sause.html" class="footer__info-once-link"><li>Соусы</li></a>
+            <a href="other.html" class="footer__info-once-link"><li>Прочее</li></a>
+          </ul>
+        </div>
+        <div class="footer__info-once">
+          <h2 class="footer__info-once-h2">Контакты</h2>
+          <ul class="footer__info-once-ul">
+            <li><i class="fas fa-envelope"></i> rezerver2023@yandex.ru</li>
+            <li><i class="fas fa-phone-alt"></i> +7-391-201-51-50 Красноярск</li>
+            <li><i class="fas fa-phone-alt"></i> +7-495-557-23-31 Москва</li>
+            <li><i class="fas fa-phone-alt"></i> +7-495-557-21-55 Москва</li>
+          </ul>
+        </div>
+        <div class="footer__info-once">
+          <h2 class="footer__info-once-h2">Адрес</h2>
+          <ul class="footer__info-once-ul">
+            <li>г. Котельники
+              ул. Новая, д. 19</li>
+              <li>Работаем с 8:00 до 18:00</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="mail.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
