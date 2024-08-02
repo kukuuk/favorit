@@ -1,0 +1,9 @@
+/sitemap/
+/vendor/
+/.idea/
+.project
+/node_modules/
+.bashrc
+.vscode/
+.DS_Store
+yarn.lock
